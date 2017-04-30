@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Extenso.js</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic SC|Open+Sans+Condensed:300">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css">
+    <link rel="stylesheet" href="css/hijs-style.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="col logo">
+        <h1><span class="extenso">Exten</span><span class="n">50</span><span class="js">.js</span></h1>
+      </div>
+      <div class="col list">
+        <ul>
+          <li>
+            <a href="https://npm.runkit.com/extenso">Testá-lo</a>
+          </li>
+          <li>
+            <a href="https://www.npmjs.com/package/extenso">NPM</a>
+          </li>
+          <li>
+            <a href="https://github.com/theuves/extenso.js">GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="home">
+        <div class="content">
+          <div class="col">
+            <h1>Escrever números por extenso.</h1>
+            <p>Escreve números:</p>
+            <ul>
+              <li>Negativos.</li>
+              <li>Decimais.</li>
+              <li>Com até 66 dígitos.</li>
+            </ul>
+            <button><span class="octicon octicon-cloud-download"></span> Download v0.4.5</button>
+          </div>
+          <div class="col code">
+            <pre><code>// Exemplos:
+
+var x = extenso(123);
+var y = extenso(-123);
+var z = extenso("1,23");
+
+alert([x, y, z].join("\n"));</code></pre>
+            <div class="code-footer">
+              <a href="javascript:run();">Executar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="installation">
+        <div class="content">
+          <h1>Instalação</h1>
+          <p>Via linha de comando faça:</p>
+          <pre><code onclick="selectText(this);">npm install --save extenso</code></pre>
+        </div>
+      </div>
+      <div class="examples">
+        <div class="content">
+          <h1>Exemplos</h1>
+          <p>Veja abaixo alguns exemplos de uso:</p>
+          <div class="examples-code">
+            <pre><code>extenso(123);
+extenso(-123);
+extenso(1000000);
+extenso("1000000");
+extenso("1.000.000");
+extenso("1,0");
+extenso("0,5");
+extenso("1,5");
+extenso(1, {feminino: true});
+extenso(2, {feminino: true});
+extenso(10000000000000001);
+extenso("10000000000000001");</code></pre>
+            <pre><code>"cento e vinte e três"
+"menos cento e vinte e três"
+"um milhão"
+"um milhão"
+"um milhão"
+"um"
+"cinco décimos"
+"um inteiro e cinco décimos"
+"uma"
+"duas"
+undefined
+"dez quatrilhões e um"</code></pre>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="content">
+        <p>Feito com <span class="love">♥</span> por <a href="https://github.com/theuves">Matheus Alves</a>.<br><a href="https://github.com/theuves/extenso.js/blob/master/License">Licença MIT</a>.</p>
+      </div>
+    </footer>
+    <script src="js/hijs.js"></script>
+    <script src="js/extenso.js"></script>
+    <script src="js/select-text.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

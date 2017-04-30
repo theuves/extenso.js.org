@@ -1,0 +1,249 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.25s color;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 30px 50px;
+}
+
+header .col {
+  flex: 1;
+}
+
+.logo h1 {
+  font-family: "Dejavu Sans Mono";
+  font-size: 1.85rem;
+  font-weight: lighter;
+  line-height: 100%;
+}
+
+.logo .extenso {
+  font-style: italic;
+}
+
+.logo .n {
+  color: #d35400;
+}
+
+.logo .js {
+  color: gray;
+}
+
+.list ul {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.list li {
+  display: inline;
+  border-style: solid;
+  border-color: #34495e;
+  border-width: 0px 0px 3px 0px;
+  padding: 0px 5px 0px 5px;
+  transition: 0.1s all;
+  font-weight: bold;
+}
+
+.list a {
+  color: gray;
+  transition: 0.1s color;
+}
+
+.list a:hover {
+  color: #999;
+}
+
+.list li:hover {
+  border-color: #d35400;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0px auto;
+  padding: 100px 0px 100px 0px;
+}
+
+.home .content {
+  display: flex;
+}
+
+.content h1 {
+  text-transform: uppercase;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.home .content .col {
+  flex: 1;
+  overflow: auto;
+}
+
+p,
+ul {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.home ul {
+  margin-bottom: 1.5rem;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.home ul li:before {
+  content: "✓";
+  margin-right: 10px;
+  color: greenyellow;
+}
+
+.home .code-footer {
+  text-align: right;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.home .code-footer a {
+  color: white;
+}
+
+.home .code-footer a:hover {
+  color: #d35400;
+}
+
+.home button {
+  background-color: #181818;
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-family: "Open Sans Condensed", sans-serif;
+  cursor: pointer;
+}
+
+.octicon-cloud-download {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.home button:hover {
+  opacity: 0.95;
+}
+
+.home button:active {
+  opacity: 0.85;
+}
+
+.home {
+  background-color: #34495e;
+  color: white;
+}
+
+.home pre {
+  background-color: #272822;
+  padding: 20px 30px;
+}
+
+pre,
+.installation code {
+  border-radius: 4px;
+}
+
+pre {
+  color: #eee;
+  overflow: auto;
+}
+
+pre code {
+  font-size: 1.05rem;
+  line-height: 1.45rem;
+}
+
+.installation,
+.examples {
+  text-align: center;
+}
+
+.installation code {
+  background-color: #272822;
+  padding: 10px 30px;
+  display: inline-block;
+  font-size: 1.3rem;
+}
+
+.examples {
+  background-color: #e67e22;
+  color: white;
+}
+
+.examples-code {
+  display: flex;
+  background-color: #272822;
+  border-radius: 4px;
+}
+
+.examples-code pre:last-child {
+  border-left: solid 0.5px #444;
+}
+
+.examples-code pre:first-child {
+  border-right: solid 0.5px #444;
+}
+
+.examples-code pre {
+  padding: 30px 40px;
+  flex: 1;
+  text-align: left;
+  font-size: 1.3rem;
+  border-radius: 0px;
+  overflow: auto;
+}
+
+footer .content {
+  padding-bottom: 120px;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: #34495e;
+}
+
+footer a:hover {
+  color: #d35400;
+}
+
+@keyframes pulse {
+  from {transform: scale(1);}
+  to {transform: scale(1.2);}
+}
+
+.love {
+  color: #e74c3c;
+  display: inline-block;
+  animation: 0.5s pulse infinite alternate-reverse;
+}
+
+::selection {
+  color: white;
+  background-color: #d35400;
+}
