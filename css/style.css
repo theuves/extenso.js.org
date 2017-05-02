@@ -43,7 +43,7 @@ header .col {
 }
 
 .logo h1 {
-  font-family: "Dejavu Sans Mono";
+  font-family: "Dejavu Sans Mono", monospace;
   font-size: 1.85rem;
   font-weight: lighter;
   line-height: 100%;
