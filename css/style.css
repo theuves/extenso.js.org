@@ -16,7 +16,26 @@ a {
 header {
   display: flex;
   align-items: center;
-  padding: 30px 50px;
+  padding: 1.875rem 3.125rem;
+}
+
+header .menu {
+  display: none;
+  width: 25px;
+  height: 25px;
+  float: right;
+  cursor: pointer;
+}
+
+header .bar {
+  width: 100%;
+  height: calc(100% / 6);
+  background-color: #222;
+  border-radius: 4px;
+}
+
+header .bar:not(:last-child) {
+  margin-bottom: calc(100% / 4);
 }
 
 header .col {
@@ -72,10 +91,38 @@ header .col {
   border-color: #d35400;
 }
 
+nav {
+  display: none;
+  overflow: hidden;
+}
+
+nav.show {
+  display: block;
+}
+
+nav ul {
+  background-color: #222;
+  margin: 0px;
+}
+
+nav a {
+  color: white;
+  display: block;
+  padding: 12px 24px;
+}
+
+nav a:hover {
+  background-color: #333;
+}
+
+nav a:active {
+  background-color: #444;
+}
+
 .content {
-  max-width: 900px;
+  max-width: 950px;
   margin: 0px auto;
-  padding: 100px 0px 100px 0px;
+  padding: 100px 25px 100px 25px;
 }
 
 .home .content {
@@ -127,6 +174,11 @@ ul {
   color: #d35400;
 }
 
+.octicon-cloud-download {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
 .home button {
   background-color: #181818;
   padding: 10px 30px;
@@ -136,11 +188,7 @@ ul {
   border-radius: 4px;
   font-family: "Open Sans Condensed", sans-serif;
   cursor: pointer;
-}
-
-.octicon-cloud-download {
-  font-size: 1.5rem;
-  margin-right: 5px;
+  transition: 0.25s all;
 }
 
 .home button:hover {
@@ -241,6 +289,56 @@ footer a:hover {
   color: #e74c3c;
   display: inline-block;
   animation: 0.5s pulse infinite alternate-reverse;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+
+  .home .content {
+    display: block;
+  }
+
+  .home .content .col:first-child {
+    margin-bottom: 20px;
+  }
+
+  .content {
+    padding: 50px 25px 50px 25px;
+  }
+
+  .examples-code {
+    display: block;
+  }
+
+  .examples-code pre {
+    padding: 20px 30px;
+  }
+
+  header .menu {
+    display: block;
+  }
+
+  header .list ul {
+    display: none;
+  }
+
+  .examples-code pre {
+    border: none;
+  }
+
+  .examples-code pre:last-child {
+    border-top: solid 0.5px #444;
+  }
+
+  .examples-code pre:first-child {
+    border-bottom: solid 0.5px #444;
+  }
+
+  footer .content {
+    padding-bottom: 80px;
+  }
 }
 
 ::selection {
