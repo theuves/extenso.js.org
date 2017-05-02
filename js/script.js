@@ -21,3 +21,13 @@ function menu() {
 function download() {
   window.location.href = "https://github.com/theuves/extenso.js/archive/master.zip";
 }
+
+window.addEventListener("resize", function () {
+  var nav = document.querySelector("nav").classList;
+
+  if (window.innerWidth > 600) {
+    if (nav.contains("show")) {
+      nav.remove("show");
+    }
+  }
+});
