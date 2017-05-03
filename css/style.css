@@ -137,6 +137,12 @@ nav a:active {
   display: flex;
 }
 
+.fa-external-link {
+  float: right;
+  font-size: 1.1rem;
+  padding-top: calc(14px / 2);
+}
+
 .content h1 {
   text-transform: uppercase;
   font-family: "Amatic SC", sans-serif;
@@ -182,8 +188,8 @@ ul {
   color: #d35400;
 }
 
-.octicon-cloud-download {
-  font-size: 1.5rem;
+.fa-download {
+  font-size: 1.4rem;
   margin-right: 5px;
 }
 
@@ -293,10 +299,12 @@ footer a:hover {
   to {transform: scale(1.2);}
 }
 
-.love {
+.fa-heart {
   color: #e74c3c;
   display: inline-block;
+  font-size: 1.1rem;
   animation: 0.5s pulse infinite alternate-reverse;
+  margin: 0px 2px;
 }
 
 @media screen and (max-width: 600px) {
