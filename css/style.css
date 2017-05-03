@@ -16,13 +16,13 @@ a {
 header {
   display: flex;
   align-items: center;
-  padding: 1.875rem 3.125rem;
+  padding: 30px 50px;
 }
 
 header .menu {
   display: none;
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   float: right;
   cursor: pointer;
 }
@@ -30,8 +30,16 @@ header .menu {
 header .bar {
   width: 100%;
   height: calc(100% / 6);
-  background-color: #222;
+  background-color: #333;
   border-radius: 4px;
+}
+
+header .menu:hover > .bar {
+  background-color: #444;
+}
+
+header .menu:active > .bar {
+  background-color: #666;
 }
 
 header .bar:not(:last-child) {
@@ -294,6 +302,10 @@ footer a:hover {
 @media screen and (max-width: 600px) {
   html {
     font-size: 14px;
+  }
+
+  header {
+    padding: 25px 25px;
   }
 
   .home .content {
