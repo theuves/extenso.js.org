@@ -304,7 +304,6 @@ footer a:hover {
   display: inline-block;
   font-size: 1.1rem;
   animation: 0.5s pulse infinite alternate-reverse;
-  margin: 0px 2px;
 }
 
 @media screen and (max-width: 600px) {
