@@ -8,11 +8,14 @@
     "select": "^1.1.2"
   },
   "devDependencies": {
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
     "browserify": "^14.4.0",
     "uglifyjs": "^2.4.11"
   },
   "scripts": {
-  	"build": "browserify src/script.js | uglifyjs -o js/script.js"
+    "build": "browserify src/script.js -t babelify | uglifyjs -o js/script.js"
   },
   "repository": "theuves/extenso.js.org",
   "author": "Matheus Alves",

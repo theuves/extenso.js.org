@@ -1,16 +1,14 @@
 "use strict";
 
-var highlight = require("highlight-es");
-var select = require("select");
-var extenso = require("extenso");
+import highlight from "highlight-es";
+import select from "select";
+import extenso from "extenso";
 
-function span(className) {
-  return function (string) {
-    return "<span class=\"" + className + "\">" + string + "</span>";
-  }
-}
+const span = className => {
+  return string => `<span class="${className}">${string}</span>`;
+};
 
-Array.from(document.querySelectorAll('pre code')).forEach(function (code) {
+Array.prototype.slice.call(document.querySelectorAll("pre code")).forEach(code => {
   code.innerHTML = highlight(code.textContent, {
     comment: span("comment"),
     keyword: span("keyword"),
@@ -19,8 +17,8 @@ Array.from(document.querySelectorAll('pre code')).forEach(function (code) {
   });
 });
 
-document.querySelector(".menu").addEventListener("click", function () {
-  var nav = document.querySelector("nav").classList;
+document.querySelector(".menu").addEventListener("click", () => {
+  const nav = document.querySelector("nav").classList;
 
   if (nav.contains("show")) {
     nav.remove("show");
@@ -29,8 +27,8 @@ document.querySelector(".menu").addEventListener("click", function () {
   }
 });
 
-window.addEventListener("resize", function () {
-  var nav = document.querySelector("nav").classList;
+window.addEventListener("resize", () => {
+  const nav = document.querySelector("nav").classList;
 
   if (window.innerWidth > 600) {
     if (nav.contains("show")) {
@@ -39,15 +37,15 @@ window.addEventListener("resize", function () {
   }
 });
 
-document.querySelector("#run").addEventListener("click", function () {
-  var x = extenso(123);
-  var y = extenso(-123);
-  var z = extenso("1,23");
+document.querySelector("#run").addEventListener("click", () => {
+  const int = extenso(123);
+  const neg = extenso(-123);
+  const dec = extenso("1,23");
 
-  alert([x, y, z].join("\n"));
+  alert(`${int}\n${neg}\n${dec}`);
 });
 
-document.querySelector("#install").addEventListener("click", function () {
+document.querySelector("#install").addEventListener("click", () => {
   select(document.querySelector("#install"));
 });
 
