@@ -1,0 +1,17 @@
+code .keyword {
+  color: #66d9ef;
+  font-weight: bold;
+}
+
+code .string {
+  color: #e6db74;
+}
+
+code .number {
+  color: #ae81ff;
+}
+
+code .comment {
+  color: #75715E;
+  font-style: italic;
+}

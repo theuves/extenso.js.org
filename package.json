@@ -1,0 +1,9 @@
+{
+  "name": "extenso.js.org",
+  "version": "0.0.0",
+  "description": "Site p/ Extenso.js.",
+  "repository": "theuves/extenso.js.org",
+  "author": "Matheus Alves",
+  "license": "MIT",
+  "homepage": "https://extenso.js.org"
+}

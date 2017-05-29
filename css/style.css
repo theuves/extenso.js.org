@@ -180,11 +180,19 @@ ul {
   margin-right: 10px;
 }
 
-.home .code-footer a {
+.home .code-footer button {
   color: white;
+  font-size: 1rem;
+  padding: 0px;
+  font-family: "Open Sans Condensed", sans-serif;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  border: none;
+  background-color: transparent;
 }
 
-.home .code-footer a:hover {
+.home .code-footer button:hover {
   color: #d35400;
 }
 
@@ -193,23 +201,22 @@ ul {
   margin-right: 5px;
 }
 
-.home button {
+.home a.download {
   background-color: #181818;
   padding: 10px 30px;
   font-size: 1.5rem;
   color: white;
-  border: none;
   border-radius: 4px;
   font-family: "Open Sans Condensed", sans-serif;
-  cursor: pointer;
   transition: 0.25s all;
+  display: inline-block;
 }
 
-.home button:hover {
+.home a.download:hover {
   opacity: 0.95;
 }
 
-.home button:active {
+.home a.download:active {
   opacity: 0.85;
 }
 

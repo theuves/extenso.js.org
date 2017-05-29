@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Extenso.js</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic SC|Open+Sans+Condensed:300">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/hijs-style.css">
+    <link rel="stylesheet" href="css/highlight-es">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -16,7 +15,7 @@
         <h1><span class="extenso">Exten</span><span class="n">50</span><span class="js">.js</span></h1>
       </div>
       <div class="col list">
-        <div class="menu" onclick="menu();">
+        <div class="menu">
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
@@ -67,7 +66,9 @@
               <li>Decimais.</li>
               <li>Com até 66 dígitos.</li>
             </ul>
-            <button onclick="download()""><span class="fa fa-download"></span> Download v0.4.6</button>
+            <a class="download" href="https://github.com/theuves/extenso.js/archive/master.zip">
+              <span class="fa fa-download"></span> Download v0.4.6
+            </a>
           </div>
           <div class="col code">
             <pre><code>// Exemplos:
@@ -78,7 +79,7 @@ var z = extenso("1,23");
 
 alert([x, y, z].join("\n"));</code></pre>
             <div class="code-footer">
-              <a href="javascript:run();">Executar</a>
+              <button id="run">Executar</button>
             </div>
           </div>
         </div>
@@ -87,7 +88,7 @@ alert([x, y, z].join("\n"));</code></pre>
         <div class="content">
           <h1>Instalação</h1>
           <p>Via linha de comando faça:</p>
-          <pre><code onclick="select(this);">npm install --save extenso</code></pre>
+          <pre><code id="install">npm install --save extenso</code></pre>
         </div>
       </div>
       <div class="examples">
@@ -128,9 +129,9 @@ undefined
         <p>Feito com <span class="fa fa-heart"></span> por <a href="https://github.com/theuves">Matheus Alves</a>.<br><a href="https://github.com/theuves/extenso.js/blob/master/license">Licença MIT</a>.</p>
       </div>
     </footer>
-    <script src="js/hijs.js"></script>
-    <script src="js/extenso.js"></script>
+    <script src="dist/script.js"></script>
+    <!-- <script src="js/extenso.js"></script>
     <script src="js/select.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js"></script> -->
   </body>
 </html>
