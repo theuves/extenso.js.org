@@ -2,6 +2,18 @@
   "name": "extenso.js.org",
   "version": "0.0.0",
   "description": "Site p/ Extenso.js.",
+  "dependencies": {
+    "extenso": "^0.4.6",
+    "highlight-es": "^1.0.1",
+    "select": "^1.1.2"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "uglifyjs": "^2.4.11"
+  },
+  "scripts": {
+  	"build": "browserify src/script.js | uglifyjs -o js/script.js"
+  },
   "repository": "theuves/extenso.js.org",
   "author": "Matheus Alves",
   "license": "MIT",
