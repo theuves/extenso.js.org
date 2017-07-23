@@ -1,64 +1,39 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <title>Extenso.js</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic SC|Open+Sans+Condensed:300">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/highlight-es.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Extenso.js ― Escrever números por extenso.</title>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <div class="col logo">
-        <h1><span class="extenso">Exten</span><span class="n">50</span><span class="js">.js</span></h1>
-      </div>
-      <div class="col list">
-        <div class="menu">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+    <div class="navbar navbar-default header">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><i><span class="text-black">Extenso</span><span class="text-red">.js</span></i></a>
+          <button class="navbar-toggle" data-toggle="collapse" data-target="#links">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
-        <ul>
-          <li>
-            <a href="https://npm.runkit.com/extenso">Testá-lo</a>
-          </li>
-          <li>
-            <a href="https://www.npmjs.com/package/extenso">NPM</a>
-          </li>
-          <li>
-            <a href="https://github.com/theuves/extenso.js">GitHub</a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="links">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="text-uppercase"><a href="https://npm.runkit.com/extenso">Testá-lo</a></li>
+            <li class="text-uppercase"><a href="https://www.npmjs.com/package/extenso">NPM</a></li>
+            <li class="text-uppercase"><a href="https://github.com/theuves/extenso.js">GitHub</a></li>
+          </ul>
+        </div>
       </div>
-    </header>
-    <nav>
-      <ul>
-        <li>
-          <a href="https://npm.runkit.com/extenso">
-            Testá-lo
-            <span class="fa fa-external-link"></span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.npmjs.com/package/exte
-            nso">NPM
-            <span class="fa fa-external-link"></span>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/theuves/extenso.js
-            ">GitHub
-            <span class="fa fa-external-link"></span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <main>
-      <div class="home">
-        <div class="content">
-          <div class="col">
+    </div>
+    <div class="jumbotron home">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 margin-bottom">
             <h1>Escrever números por extenso.</h1>
             <p>Escreve números:</p>
             <ul>
@@ -66,37 +41,54 @@
               <li>Decimais.</li>
               <li>Com até 66 dígitos.</li>
             </ul>
-            <a class="download" href="https://github.com/theuves/extenso.js/archive/master.zip">
-              <span class="fa fa-download"></span> Download v0.4.6
+            <a class="btn btn-default" href="https://github.com/theuves/extenso.js/archive/master.zip">
+              <i class="glyphicon glyphicon-download"></i> Download v0.4.6
             </a>
           </div>
-          <div class="col code">
-            <pre><code>// Exemplos:
+          <div class="col-sm-6">
+            <pre><code>// Alguns exemplos.
 
-const int = extenso(123);
-const neg = extenso(-123);
-const dec = extenso("1,23");
+var inteiro = extenso(123);
+var negativo = extenso(-123);
+var decimal = extenso("1,23");
 
-alert(`${int}\n${neg}\n${dec}`);</code></pre>
-            <div class="code-footer">
-              <button id="run">Executar</button>
-            </div>
+alert(inteiro);
+alert(negativo);
+alert(decimal);
+</code></pre>
+            <a class="pull-right run" href="#">Executar</a>
           </div>
         </div>
       </div>
-      <div class="installation">
-        <div class="content">
-          <h1>Instalação</h1>
-          <p>Via linha de comando faça:</p>
-          <pre><code id="install">npm install --save extenso</code></pre>
+    </div>
+    <div class="jumbotron installation">
+      <div class="container">
+        <h1 class="text-center">Instalação</h1>
+        <p class="text-center">Instale-o via linha de comando com:</p>
+        <ul class="text-center nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#npm">NPM</a></li>
+          <li><a data-toggle="tab" href="#bower">Bower</a></li>
+        </ul>
+        <div class="tab-content">
+          <div id="npm" class="tab-pane fade in active">
+            <p class="text-center">
+              <pre onclick="selecionar(this);"><code>$ <span class="command">npm install --save extenso</span></code></pre>
+            </p>
+          </div>
+          <div id="bower" class="tab-pane fade">
+            <p class="text-center">
+              <pre onclick="selecionar(this);"><code>$ <span class="command">bower install --save extenso.js</span></code></pre>
+            </p>
+          </div>
         </div>
       </div>
-      <div class="examples">
-        <div class="content">
-          <h1>Exemplos</h1>
-          <p>Veja abaixo alguns exemplos de uso:</p>
-          <div class="examples-code">
-            <pre><code>extenso(123);
+    </div>
+    <div class="jumbotron examples">
+      <div class="container">
+        <h1 class="text-center">Exemplos</h1>
+        <p class="text-center">Veja abaixo alguns exemplos de uso:</p>
+        <div class="row">
+          <div class="col-sm-6 left"><pre><code>extenso(123);
 extenso(-123);
 extenso(1000000);
 extenso("1000000");
@@ -107,8 +99,8 @@ extenso("1,5");
 extenso(1, {feminino: true});
 extenso(2, {feminino: true});
 extenso(10000000000000001);
-extenso("10000000000000001");</code></pre>
-            <pre><code>"cento e vinte e três"
+extenso("10000000000000001");</code></pre></div>
+          <div class="col-sm-6 right"><pre><code>"cento e vinte e três"
 "menos cento e vinte e três"
 "um milhão"
 "um milhão"
@@ -119,16 +111,17 @@ extenso("10000000000000001");</code></pre>
 "uma"
 "duas"
 undefined
-"dez quatrilhões e um"</code></pre>
-          </div>
+"dez quatrilhões e um"</code></pre></div>
         </div>
       </div>
-    </main>
+    </div>
     <footer>
-      <div class="content">
-        <p>Feito com <span class="fa fa-heart"></span> por <a href="https://github.com/theuves">Matheus Alves</a>.<br><a href="https://github.com/theuves/extenso.js/blob/master/license">Licença MIT</a>.</p>
-      </div>
+      <p class="text-center">Feito com <i class="glyphicon glyphicon-heart"></i> por <a href="https://github.com/theuves">Matheus Alves.</a></p>
+      <p class="text-center"><a href="https://github.com/theuves/extenso.js/blob/master/license">Licença MIT</a>.</p>
     </footer>
+    <script src="bower_components/select/dist/select.js"></script>
+    <script src="bower_components/hijs/index.js"></script>
+    <script src="bower_components/extenso.js/dist/extenso.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

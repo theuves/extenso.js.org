@@ -1,0 +1,57 @@
+@import "../colors.less";
+
+/***/
+
+.home {
+  color: white;
+  background-color: @azul;
+
+  ul {
+    margin-bottom: 24px;
+
+    li {
+      font-size: 1.25rem;
+      list-style-type: none;
+
+      &::before {
+        content: "✓";
+        margin-right: 10px;
+        color: greenyellow;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .btn {
+    font-size: 1.375rem;
+    padding: 10px 30px;
+    background-color: #181818;
+    border-color: #111;
+    color: white;
+
+    &:hover {
+      color: #eee;
+      background-color: #151515;
+    }
+
+    &:active {
+      border-color: #555;
+    }
+  }
+
+  pre {
+    margin-bottom: 5px;
+  }
+
+  .run {
+    color: white;
+    font-size: 1rem;
+    margin-right: 10px;
+
+    &:hover {
+      opacity: 0.9;
+      text-decoration: none;
+      color: @vermelho;
+    }
+  }
+}

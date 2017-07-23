@@ -1,0 +1,39 @@
+@import "./colors.less";
+@import "./bootstrap.less";
+
+/***/
+
+@import "./partes/header.less";
+@import "./partes/home.less";
+@import "./partes/installation.less";
+@import "./partes/examples.less";
+@import "./partes/footer.less";
+
+/***/
+
+@import "./outros.less";
+@import "./hijs.less";
+
+/*===*/
+
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: "Open Sans Condensed";
+  font-size: 1.25rem;
+}
+
+/***/
+
+::selection {
+  color: white;
+  background-color: @vermelho;
+}

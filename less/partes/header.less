@@ -1,0 +1,55 @@
+@import "../colors.less";
+
+/***/
+
+.header {
+  padding: 30px 50px;
+  border: 0px;
+  border-radius: 0px;
+  background-color: white;
+  margin-bottom: 0px;
+
+  .navbar-brand {
+    font-size: 2rem;
+    font-family: monospace;
+  }
+
+  .nav {
+    font-size: 1.125rem;
+    font-weight: bold;
+
+    a {
+      transition: color 0.15s;
+
+      &:hover {
+        color: @vermelho !important;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border: none;
+    background-color: transparent !important;
+
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+
+  .icon-bar {
+    height: 3px;
+    background-color: black !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    padding: 5px 10px;
+  }
+}
