@@ -10,8 +10,8 @@
     "gulp-watch": "4.3.11"
   },
   "scripts": {
+    "bower": "bower install",
     "less": "gulp less",
-    "less-watch": "gulp less-watch",
-    "install": "bower install"
+    "less-watch": "gulp less-watch"
   }
 }
