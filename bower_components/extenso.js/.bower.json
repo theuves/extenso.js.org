@@ -1,0 +1,36 @@
+{
+  "name": "extenso.js",
+  "version": "0.4.6",
+  "description": "Escrever números por extenso.",
+  "main": "dist/extenso.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/theuves/extenso.js.git"
+  },
+  "ignore": [
+    "src/extenso.js",
+    ".editorconfig",
+    ".gitignore",
+    ".npmignore",
+    ".travis.yml",
+    "package.json",
+    "test.js"
+  ],
+  "authors": [
+    {
+      "name": "Matheus Alves",
+      "email": "theuves@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/theuves/extenso.js",
+  "_release": "0.4.6",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.4.6",
+    "commit": "8b62997ba76e56f80e2c6b544d48f5bfeb2c6fd0"
+  },
+  "_source": "https://github.com/theuves/extenso.js.git",
+  "_target": "0.4.6",
+  "_originalSource": "extenso.js"
+}

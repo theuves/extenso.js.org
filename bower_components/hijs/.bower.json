@@ -1,0 +1,13 @@
+{
+  "name": "hijs",
+  "_cacheHeaders": {
+    "ETag": "\"d39c7025c8cd8a0b296953d630554e724a36ffbd\"",
+    "Content-Length": "3281",
+    "Content-Type": "text/plain; charset=utf-8"
+  },
+  "_release": "e-tag:d39c7025c",
+  "main": "index.js",
+  "_source": "https://raw.githubusercontent.com/cloudhead/hijs/master/hijs.js=https://raw.githubusercontent.com/cloudhead/hijs/master/hijs.js",
+  "_target": "*",
+  "_originalSource": "https://raw.githubusercontent.com/cloudhead/hijs/master/hijs.js=https://raw.githubusercontent.com/cloudhead/hijs/master/hijs.js"
+}

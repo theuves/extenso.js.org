@@ -7,7 +7,7 @@
     "extenso.js": "0.4.6",
     "https://raw.githubusercontent.com/cloudhead/hijs/master/hijs.js": "",
     "jquery": "3.2.1",
-    "select": "1.1.2",
+    "select": "1.1.2"
   },
   "authors": [
     "Matheus Alves <theuves@gmail.com>"
