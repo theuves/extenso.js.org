@@ -1,2 +1,11 @@
+
+# Pastas
+# ======
+
+dist
 node_modules
+
+# Arquivos
+# ========
+
 npm-debug.log
