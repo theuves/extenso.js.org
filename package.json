@@ -13,8 +13,9 @@
   },
   "scripts": {
     "bower": "bower install",
-    "minify": "gulp minify",
+    "build": "gulp",
     "less": "gulp less",
-    "less-watch": "gulp less-watch"
+    "minify": "gulp minify",
+    "watch": "gulp watch"
   }
 }
