@@ -1,7 +1,7 @@
 {
   "name": "extenso.js",
   "version": "0.0.0",
-  "description": "Um site para o Extenso.js.",
+  "description": "Um site p/ o Extenso.js.",
   "dependencies": {
     "bootstrap": "3.3.7",
     "extenso.js": "0.4.6",

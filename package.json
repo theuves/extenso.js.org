@@ -1,6 +1,6 @@
 {
   "name": "extenso.js.org",
-  "description": "Um site para o Extenso.js",
+  "description": "Um site p/ o Extenso.js",
   "version": "0.0.0",
   "devDependencies": {
     "bower": "1.8.0",
