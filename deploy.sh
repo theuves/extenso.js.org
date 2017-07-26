@@ -22,8 +22,12 @@ git push origin gh-pages
 # Entra no branch gh-pages.
 git checkout gh-pages
 
-# Ignora alterações (caso tenha)
-git checkout -- .
+# Se estiver no branch gh-pages.
+if [[ $(git rev-parse --abbrev-ref HEAD) -eq "gh-pages" ]]; then
 
-# Sincroniza.
-git pull
+  # Ignora alterações (caso tenha).
+  git checkout -- .
+
+  # Sincroniza.
+  git pull
+fi
