@@ -9,6 +9,23 @@ var less = require("gulp-less");
 var uglify = require("gulp-uglify");
 var watch = require("gulp-watch");
 
+// Compilar LESS em CSS.
+// =====================
+
+gulp.task("less", function () {
+  return gulp.src("./src/less/style.less")
+    .pipe(less())
+    .pipe(gulp.dest("./src/css"));
+});
+
+gulp.task("watch", function () {
+  return watch("./src/less/**/*.less", function () {
+    gulp.src("./src/less/style.less")
+      .pipe(less())
+      .pipe(gulp.dest("./src/css"));
+  });
+});
+
 // Minificar HTML, CSS e JavaScript.
 // =================================
 
@@ -20,7 +37,9 @@ gulp.task("html", function () {
 });
 
 // CSS.
-gulp.task("css", function () {
+gulp.task("css", [
+    "less"
+  ], function () {
   return gulp.src("./src/css/**/*.css")
     .pipe(csso())
     .pipe(gulp.dest("./dist/css"));
@@ -39,23 +58,6 @@ gulp.task("minify", [
   "css",
   "js"
 ]);
-
-// Compilar LESS em CSS.
-// =====================
-
-gulp.task("less", function () {
-  return gulp.src("./src/less/style.less")
-    .pipe(less())
-    .pipe(gulp.dest("./src/css"));
-});
-
-gulp.task("watch", function () {
-  return watch("./src/less/**/*.less", function () {
-    gulp.src("./src/less/style.less")
-      .pipe(less())
-      .pipe(gulp.dest("./src/css"));
-  });
-});
 
 // Copiar componentes Bower no "dist".
 // ===================================
@@ -77,7 +79,6 @@ gulp.task("cname", function () {
 // ===========
 
 gulp.task("default", [
-  "less",
   "minify",
   "bower",
   "cname"
