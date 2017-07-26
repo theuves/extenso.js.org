@@ -15,9 +15,9 @@ cd extenso.js.org
 npm install
 npm run bower
 
-# Compilar CSS.
+# Compilar LESS.
 npm run less
 
-# Aguardar alterações para compilar CSS.
+# Aguardar alterações para compilar LESS.
 npm run watch
 ```
