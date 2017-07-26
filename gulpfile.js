@@ -35,8 +35,8 @@ gulp.task("js", function () {
 
 // Minifica.
 gulp.task("minify", [
-  "css",
   "html",
+  "css",
   "js"
 ]);
 
@@ -61,16 +61,24 @@ gulp.task("watch", function () {
 // ===================================
 
 gulp.task("bower", function () {
-  return gulp.src([
-      "./src/bower_components/**/*"
-    ])
+  return gulp.src("./src/bower_components/**/*")
     .pipe(gulp.dest("./dist/bower_components"));
+});
+
+// Copiar CNAME no "dist".
+// =======================
+
+gulp.task("cname", function () {
+  return gulp.src("./CNAME")
+    .pipe(gulp.dest("./dist"));
 });
 
 // Construção.
 // ===========
 
-gulp.src("default", [
+gulp.task("default", [
+  "less",
+  "minify",
   "bower",
-  "minify"
+  "cname"
 ]);
