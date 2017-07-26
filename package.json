@@ -15,7 +15,6 @@
     "bower": "bower install",
     "build": "gulp",
     "less": "gulp less",
-    "minify": "gulp minify",
     "watch": "gulp watch"
   }
 }
