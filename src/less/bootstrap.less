@@ -1,6 +1,16 @@
+@import "../bower_components/bootstrap/less/variables.less";
+
 .jumbotron {
   padding: 100px 0px;
   margin-bottom: 0px;
+
+  @media (max-width: @screen-desktop) {
+    padding: 60px 0px;
+  }
+
+  @media (max-width: @screen-tablet) {
+    padding: 30px 0px;
+  }
 }
 
 .jumbotron h1 {
@@ -26,26 +36,8 @@ pre code {
   white-space: pre;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: @screen-lg-desktop) {
   .container {
-    width: 1000px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .jumbotron {
-    padding: 80px 0px;
-  }
-}
-
-@media (max-width: 800px) {
-  .jumbotron {
-    padding: 50px 0px;
-  }
-}
-
-@media (max-width: 600px) {
-  .jumbotron {
-    padding: 30px 0px;
+    width: @screen-desktop;
   }
 }

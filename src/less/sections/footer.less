@@ -1,6 +1,6 @@
 @import "../colors.less";
 
-/***/
+@import "../../bower_components/bootstrap/less/variables.less";
 
 @keyframes pulse {
   0% {
@@ -10,8 +10,6 @@
     transform: scale(1.1);
   }
 }
-
-/***/
 
 footer {
   padding: 100px 0px 120px;
@@ -28,22 +26,13 @@ footer {
   a {
     color: #34495e;
   }
-}
 
-@media (max-width: 1000px) {
-  footer {
-    padding: 80px 0px 100px !important;
-  }
-}
-
-@media (max-width: 800px) {
-  footer {
+  @media (max-width: @screen-desktop) {
     padding: 50px 0px 70px !important;
   }
-}
 
-@media (max-width: 600px) {
-  footer {
+  @media (max-width: @screen-tablet) {
     padding: 30px 0px 50px !important;
   }
 }
+

@@ -1,6 +1,6 @@
 @import "../colors.less";
 
-/***/
+@import "../../bower_components/bootstrap/less/variables.less";
 
 .home {
   color: white;
@@ -14,11 +14,15 @@
       list-style-type: none;
 
       &::before {
-        content: "✓";
+        content: "\2713";
         margin-right: 10px;
         color: greenyellow;
         font-weight: bold;
       }
+    }
+
+    @media (max-width: @screen-tablet) {
+      padding-left: 30px;
     }
   }
 
@@ -39,19 +43,34 @@
     }
   }
 
-  pre {
-    margin-bottom: 5px;
-  }
+  .panel {
+    border: none;
 
-  .run {
-    color: white;
-    font-size: 1rem;
-    margin-right: 10px;
+    .panel-heading {
+      padding: 8px 15px;
+      font-style: italic;
+      background-color: #eee;
+    }
 
-    &:hover {
-      opacity: 0.9;
-      text-decoration: none;
-      color: @vermelho;
+    .panel-body {
+      padding: 0px;
+    }
+
+    pre {
+      margin-bottom: 0px;
+
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+
+      .badge.run {
+        color: #ddd;
+        font-size: 0.8rem;
+        background-color: fadeout(#777, 40%);
+
+        &:hover {
+          background-color: fadeout(#777, 50%);
+        }
+      }
     }
   }
 }
