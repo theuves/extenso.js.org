@@ -19,5 +19,8 @@ git commit -m "atualiza"
 # Enviar as alterações.
 git push origin gh-pages
 
+# Voltar no repositório original.
+cd ..
+
 # Sincronizar com o gh-pages.
 git pull origin gh-pages
