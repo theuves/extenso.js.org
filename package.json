@@ -13,8 +13,8 @@
   },
   "scripts": {
     "bower": "bower install",
-    "build": "npm run rm-dist && gulp",
-    "deploy": "bash deploy.sh",
+    "build": "gulp",
+    "deploy": "npm run rm-dist && bash deploy.sh",
     "less": "gulp less",
     "rm-dist": "rm -rf dist",
     "watch": "gulp watch"
