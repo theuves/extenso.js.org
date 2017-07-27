@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# Remove o diretório "dist".
-rm -rf dist
-
 # Clonar o repositório.
 git clone -b gh-pages https://github.com/theuves/extenso.js.org dist
 
