@@ -6,6 +6,8 @@ npm run build
 
 cd dist
 
-git add . && git commit -m atualização
+git add .
+
+git commit -m atualiza
 
 git push origin gh-pages
