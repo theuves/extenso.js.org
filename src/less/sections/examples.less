@@ -1,26 +1,24 @@
-.cols(@direction, @padding) {
-  padding-@{direction}: @padding;
-
-  pre {
-    border-@{direction}: 0.5px solid #444;
-    border-top-@{direction}-radius: 0px;
-    border-bottom-@{direction}-radius: 0px;
-  }
-}
-
-/***/
-
 .examples {
   color: white;
   background-color: @laranja;
 
   @media (max-width: @screen-tablet) {
+    .cols(@direction, @padding) {
+      padding-@{padding}: 15px !important;
+
+      pre {
+        border-@{direction}: 0.5px solid #444;
+        border-@{direction}-left-radius: 0px !important;
+        border-@{direction}-right-radius: 0px !important;
+      }
+    }
+
     pre {
       border-radius: @border-radius-base !important;
     }
 
     .left {
-      .cols(right, 15px);
+      .cols(bottom, right);
 
       pre {
         margin-bottom: 0px;
@@ -28,15 +26,25 @@
     }
 
     .right {
-      .cols(right, 15px);
+      .cols(top, left);
+    }
+  }
+
+  .cols(@direction) {
+    padding-@{direction}: 0px;
+
+    pre {
+      border-@{direction}: 0.5px solid #444;
+      border-top-@{direction}-radius: 0px;
+      border-bottom-@{direction}-radius: 0px;
     }
   }
 
   .left {
-    .cols(right, 0px);
+    .cols(right);
   }
 
   .right {
-    .cols(left, 0px);
+    .cols(left);
   }
 }
