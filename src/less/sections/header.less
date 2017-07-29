@@ -1,21 +1,35 @@
 .header {
+  margin-bottom: 0px;
   padding: 20px 30px;
   border: 0px;
   border-radius: 0px;
   background-color: white;
-  margin-bottom: 0px;
+
+  @media (max-width: @screen-tablet) {
+    padding: 10px 0px;
+  }
 
   .navbar-brand {
-    font-size: 2rem;
+    .fontSize(32px);
+
     font-family: monospace;
+
+    .name {
+      color: black;
+    }
+
+    .js {
+      color: @vermelho;
+    }
   }
 
   .nav {
-    font-size: 1.125rem;
+    .fontSize(18px);
+
     font-weight: bold;
 
     a {
-      transition: color 0.15s;
+      transition: color 150ms;
 
       &:hover {
         color: @vermelho !important;
@@ -30,15 +44,11 @@
     &:hover {
       background-color: transparent !important;
     }
-  }
 
-  .icon-bar {
-    height: 3px;
-    background-color: black !important;
-  }
-
-  @media (max-width: @screen-tablet) {
-    padding: 10px 0px;
+    .icon-bar {
+      height: 3px;
+      background-color: black !important;
+    }
   }
 }
 

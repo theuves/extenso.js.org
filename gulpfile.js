@@ -15,14 +15,14 @@ var watch = require("gulp-watch");
 gulp.task("less", function () {
   return gulp.src("./src/less/style.less")
     .pipe(less())
-    .pipe(gulp.dest("./src/css"));
+    .pipe(gulp.dest("./src/css/"));
 });
 
 gulp.task("watch", function () {
   return watch("./src/less/**/*.less", function () {
     gulp.src("./src/less/style.less")
       .pipe(less())
-      .pipe(gulp.dest("./src/css"));
+      .pipe(gulp.dest("./src/css/"));
   });
 });
 
@@ -33,7 +33,7 @@ gulp.task("watch", function () {
 gulp.task("html", function () {
   return gulp.src("./src/index.html")
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest("./dist"));
+    .pipe(gulp.dest("./dist/"));
 });
 
 // CSS.
@@ -42,14 +42,14 @@ gulp.task("css", [
   ], function () {
   return gulp.src("./src/css/**/*.css")
     .pipe(csso())
-    .pipe(gulp.dest("./dist/css"));
+    .pipe(gulp.dest("./dist/css/"));
 });
 
 // JavaScript.
 gulp.task("js", function () {
   return gulp.src("./src/js/**/*.js")
     .pipe(uglify())
-    .pipe(gulp.dest("./dist/js"));
+    .pipe(gulp.dest("./dist/js/"));
 });
 
 // Minifica.
@@ -64,7 +64,7 @@ gulp.task("minify", [
 
 gulp.task("bower", function () {
   return gulp.src("./src/bower_components/**/*")
-    .pipe(gulp.dest("./dist/bower_components"));
+    .pipe(gulp.dest("./dist/bower_components/"));
 });
 
 // Copiar CNAME no "dist".
@@ -72,7 +72,7 @@ gulp.task("bower", function () {
 
 gulp.task("cname", function () {
   return gulp.src("./CNAME")
-    .pipe(gulp.dest("./dist"));
+    .pipe(gulp.dest("./dist/"));
 });
 
 // Construção.

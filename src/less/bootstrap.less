@@ -1,6 +1,6 @@
 .jumbotron {
-  padding: 100px 0px;
   margin-bottom: 0px;
+  padding: 100px 0px;
 
   @media (max-width: @screen-desktop) {
     padding: 60px 0px;
@@ -12,21 +12,23 @@
 }
 
 .jumbotron h1 {
-  font-size: 2.5rem !important;
+  .fontSize(40px) !important;
+
   font-weight: bold;
 }
 
 pre,
 code {
-  color: white;
-  font-size: 1rem;
-  background-color: @monokai-fundo;
+  .fontSize(16px);
+
   border: none;
+  color: white;
+  background-color: @monokai-fundo;
 }
 
 pre {
-  overflow-x: auto;
   padding: 20px 30px;
+  overflow-x: auto;
 }
 
 pre code {

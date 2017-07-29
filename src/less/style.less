@@ -1,9 +1,9 @@
 @import "../bower_components/bootstrap/less/variables.less";
 @import "./colors.less";
+@import "./mixins/font-size.less";
 
 @import "./bootstrap.less";
 @import "./hijs.less";
-@import "./others.less";
 
 @import "./sections/header.less";
 @import "./sections/home.less";
@@ -13,17 +13,16 @@
 
 html {
   font-size: 16px;
-}
 
-@media (max-width: @screen-tablet) {
-  html {
+  @media (max-width: @screen-tablet) {
     font-size: 14px;
   }
 }
 
 body {
-  font-family: "Open Sans Condensed";
-  font-size: 1.25rem;
+  .fontSize(20px);
+
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
 ::selection {

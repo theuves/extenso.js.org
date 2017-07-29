@@ -1,26 +1,18 @@
+.cols(@direction, @padding) {
+  padding-@{direction}: @padding;
+
+  pre {
+    border-@{direction}: 0.5px solid #444;
+    border-top-@{direction}-radius: 0px;
+    border-bottom-@{direction}-radius: 0px;
+  }
+}
+
+/***/
+
 .examples {
-  background-color: @laranja;
   color: white;
-
-  .left {
-    padding-right: 0px;
-
-    pre {
-      border-right: 0.5px solid #444;
-      border-top-right-radius: 0px;
-      border-bottom-right-radius: 0px;
-    }
-  }
-
-  .right {
-    padding-left: 0px;
-
-    pre {
-      border-left: 0.5px solid #444;
-      border-top-left-radius: 0px;
-      border-bottom-left-radius: 0px;
-    }
-  }
+  background-color: @laranja;
 
   @media (max-width: @screen-tablet) {
     pre {
@@ -28,25 +20,23 @@
     }
 
     .left {
-      padding-right: 15px;
+      .cols(right, 15px);
 
       pre {
-        border-bottom: 0.5px solid #444;
-        border-bottom-left-radius: 0px !important;
-        border-bottom-right-radius: 0px !important;
         margin-bottom: 0px;
       }
     }
 
     .right {
-      padding-left: 15px;
-
-      pre {
-        border-top: 0.5px solid #444;
-        border-top-left-radius: 0px !important;
-        border-top-right-radius: 0px !important;
-      }
+      .cols(right, 15px);
     }
   }
-}
 
+  .left {
+    .cols(right, 0px);
+  }
+
+  .right {
+    .cols(left, 0px);
+  }
+}
