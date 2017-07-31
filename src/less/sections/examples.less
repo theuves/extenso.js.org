@@ -4,12 +4,13 @@
 
   @media (max-width: @screen-tablet) {
     .cols(@direction, @padding) {
-      padding-@{padding}: 15px !important;
+      padding-@{padding}: 15px;
 
       pre {
+        border: none;
         border-@{direction}: 0.5px solid #444;
-        border-@{direction}-left-radius: 0px !important;
-        border-@{direction}-right-radius: 0px !important;
+        border-@{direction}-left-radius: 0px;
+        border-@{direction}-right-radius: 0px;
       }
     }
 
@@ -18,7 +19,7 @@
     }
 
     .left {
-      .cols(bottom, right);
+      .cols(bottom, right) !important;
 
       pre {
         margin-bottom: 0px;
@@ -26,7 +27,7 @@
     }
 
     .right {
-      .cols(top, left);
+      .cols(top, left) !important;
     }
   }
 
