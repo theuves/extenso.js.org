@@ -1,1 +1,1 @@
-Código fonte de <https://extenso.js.org/>.
+Um site p/ o Extenso.js.
