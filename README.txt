@@ -1,1 +1,1 @@
-Um site p/ o Extenso.js
+Um site p/ o Extenso.js.
