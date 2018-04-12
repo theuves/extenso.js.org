@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Extenso.js</title>
+    <link href="https://fonts.googleapis.com/css?family=Nova+Mono|Oleo+Script" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="http://ghub.io/extenso">GITHUB</a></li>
+          <li><a href="https://npm.im/extenso">NPM</a></li>
+          <li><a href="https://npm.runkit.com/extenso">RUNKIT</a></li>
+        </ul>
+      </nav>
+
+      <h1 id="title">EXTENSO</h1>
+      <h2>Escrever números por extenso.</h2>
+    </header>
+
+    <main class="main">
+      <section class="section installation">
+        <h1>INSTALAÇÃO</h1>
+        <p>Instale-o com <i>npm</i>:</p>
+        <div>
+          <code class="command">npm install --save extenso</code>
+        </div>
+        <a href="https://github.com/theuves/extenso.js/archive/master.zip" class="download">DOWNLOAD</a>
+        <p>
+          <small>
+            <a class="info" href="https://github.com/theuves/extenso.js/releases">VER AS VERSÕES</a>
+          </small>
+        </p>
+      </section>
+
+      <section class="section examples">
+        <h1>EXEMPLOS</h1>
+        <table class="table">
+          <tr>
+            <th>CÓDIGO</th>
+            <th>RETORNO</th>
+          </tr>
+          <tr>
+            <td><code>extenso(1)</code></td>
+            <td><code>um</code></td>
+          </tr>
+          <tr>
+            <td><code>extenso("1")</code></td>
+            <td><code>um</code></td>
+          </tr>
+          <tr>
+            <td><code>extenso(1, {feminino: true})</code></td>
+            <td><code>uma</code></td>
+          </tr>
+          <tr>
+            <td><code>extenso(42)</code></td>
+            <td><p><code>quarenta e dois</code></p></td>
+          </tr>
+          <tr>
+            <td><code>extenso(-42)</code></td>
+            <td><code>menos quarenta e dois</code></td>
+          </tr>
+          <tr>
+            <td><code>extenso(1000)</code></td>
+            <td><code>mil</code></td>
+          </tr>
+          <tr>
+            <td><code>extenso("1.000")</code></td>
+            <td><code>mil</code></td>
+          </tr>
+          <tr>
+            <td><code>extenso("1.000,00")</code></td>
+            <td><code>mil</code></td>
+          </tr>
+          <tr>
+            <td><code>extenso("3,14")</code></td>
+            <td><code>três inteiros e quatorze décimos</code></td>
+          </tr>
+          <tr>
+            <td><code>extenso(1, {real: true})</code></td>
+            <td><code>um real</code></td>
+          </tr>
+          <tr>
+            <td><code>extenso("1,50", {real: true})</code></td>
+            <td><code>um real e cinquenta centavos</code></td>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>FEITO COM <b>AMOR</b> POR <b><a href="https://github.com/theuves">MATHEUS ALVES</a></b>.</p>
+      <p>BIFURQUE-O NO <b><a href="https://github.com/theuves/extenso/fork">GITHUB</a></b>!!!</p>
+    </footer>
+    
+    <script src="./index.js"></script>
+  </body>
+</html>
