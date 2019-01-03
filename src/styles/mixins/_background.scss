@@ -1,0 +1,3 @@
+@mixin background($dir: top, $dark: none, $light: none) {
+  background-image: linear-gradient(to $dir, $dark, $light);
+}

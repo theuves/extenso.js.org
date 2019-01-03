@@ -1,0 +1,32 @@
+<% var informations = [{
+  image: './images/drawing1.svg',
+  title: 'É simples',
+  description: 'Só uma função. É só inserir um número e obtê-lo por extenso.'
+}, {
+  image: './images/drawing2.svg',
+  title: 'É completa',
+  description: 'Até duodecilhões! Para números inteiros, decimais, valores monetários, etc.'
+}, {
+  image: './images/drawing3.svg',
+  title: 'É open source',
+  description: 'Qualquer erro encontrado ou melhoria desejada é só mandar no GitHub.'
+}] %>
+
+<section id="features">
+  <div class="container">
+    <div class="row">
+      <% informations.forEach((data) => { %>
+        <div class="col-4">
+          <div class="features-item">
+            <img class="features-image" src="<%- data.image %>">
+            <h2 class="features-title"><%- data.title %></h2>
+            <p class="features-description"><%- data.description %></p>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+    <a href="#" class="btn features-btn">
+      Primeiros passos
+    </a>
+  </div>
+</section>

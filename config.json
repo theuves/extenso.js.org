@@ -1,0 +1,8 @@
+{
+  "name": "MyApp",
+  "description": "Lorem ipsum dolor sit amet.",
+  "googleFonts": [
+    "Roboto",
+    "Lobster Two"
+  ]
+}

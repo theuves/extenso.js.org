@@ -1,0 +1,29 @@
+#footer {
+  padding: 50px 0 0 0;
+  background-color: #ddd;
+}
+.footer-title {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.footer-list {
+  padding: 0;
+  margin-bottom: 50px;
+  list-style-type: none;
+  line-height: 200%;
+}
+.footer-link {
+  font-size: 1.25em;
+  color: gray;
+
+  &:hover {
+    color: gray;
+  }
+}
+.footer-copyright {
+  padding: 25px 0;
+  font-size: 1.15em;
+  background-color: $dark;
+  color: white;
+}
