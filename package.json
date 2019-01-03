@@ -4,6 +4,7 @@
   "description": "Lorem ipsum dolor sit amet.",
   "scripts": {
     "start": "serve dist",
+    "deploy": "gh-pages -d dist",
     "build": "rm -rf dist && gulp html css js image",
     "build:html": "gulp html",
     "build:css": "gulp css",
