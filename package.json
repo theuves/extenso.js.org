@@ -4,13 +4,13 @@
   "description": "Lorem ipsum dolor sit amet.",
   "scripts": {
     "start": "serve dist",
-    "build": "gulp html css js image",
+    "build": "rm -rf dist && gulp html css js image",
     "build:html": "gulp html",
     "build:css": "gulp css",
     "build:js": "gulp js",
     "build:image": "gulp image",
     "watch:html": "gulp html:watch",
-    "watch:css": "gulp css:watch",
+    "watch:css": "gulp css:watch"
   },
   "devDependencies": {
     "bootstrap": "^4.2.1",
@@ -25,5 +25,8 @@
     "popper.js": "^1.14.6"
   },
   "author": "Matheus Alves",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }

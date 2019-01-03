@@ -2,11 +2,12 @@
 <html land="pt-BR">
   <head>
     <meta charset="UTF-8">
-    <title><%- name %></title>
+    <title><%- name %> | <%- description %></title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <% if (googleFonts.length > 0) { %>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=<%- googleFonts.join('|') %>">
+    <% const fonts = googleFonts.map((font) => font.replace(/\s/g, '+')).join('|') %>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=<%- fonts %>">
   <% } %>
   <body>
     <%- include('./includes/home.ejs') -%>
