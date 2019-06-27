@@ -14,7 +14,7 @@
     "watch:css": "gulp css:watch"
   },
   "devDependencies": {
-    "bootstrap": "^4.2.1",
+    "bootstrap": "^4.3.1",
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-ejs": "^3.3.0",
