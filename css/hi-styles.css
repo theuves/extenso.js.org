@@ -1,0 +1,12 @@
+code .hi-func {
+  color: rgb(0, 224, 224);
+}
+code .hi-str {
+  color: rgb(255, 215, 0);
+}
+code .hi-obj-prop {
+  color: rgb(171, 227, 56);
+}
+code .hi-comment {
+  color: rgb(212, 208, 171) !important;
+}

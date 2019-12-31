@@ -39,13 +39,12 @@
   left: 0;
   background-color: rgba(150,150,150,.5);
 }
-.example-container-img {
+.example-container-code {
+  position: relative;
   padding: 100px 0;
 }
-.example-img {
-  position: relative;
-  image-rendering: optimizequality;
-  border-radius: 10px;
-  width: 100%;
-  box-shadow: 0 0 100px 20px rgba(0,0,0,.5);
+.example-code {
+  padding: 10px;
+  color: #eee;
+  background-color: #2b2b2b;
 }
