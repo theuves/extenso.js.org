@@ -2,37 +2,68 @@
   margin: 0;
   padding: 0;
   line-height: 100%;
+  transition: all 150ms linear;
 }
+
 html {
-  font-family: Dosis, sans-serif;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 1em;
 }
 
 .container {
   margin: 0 auto;
-  width: 700px;
+  width: 780px;
+}
+
+.header {
+  text-align: right;
+}
+.header-menu {
+  padding: 40px 0 30px 0;
+  list-style: none;
+}
+.header-menu li {
+  display: inline-block;
+}
+.header-menu li:not(:last-child) {
+  margin-right: 10px;
+}
+.header-menu a {
+  color: #aaa;
+  text-decoration: none;
+}
+.header-menu a:hover {
+  text-decoration: underline;
+  color: #555;
 }
 
 .info {
-  padding: 100px 0;
+  padding-bottom: 100px;
 }
 .info-title {
-  font-size: 3.5em;
-  margin-bottom: 30px;
+  font-size: 3em;
+  margin-bottom: 25px;
 }
 .info-title-detail {
   color: #444;
 }
 .info-description {
-  font-size: 1.25em;
   color: gray;
+  font-size: 1.15em;
 }
 
+.example {
+  padding: 50px 0;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
 .example-container-code {
   position: relative;
   padding: 100px 0;
   padding: 20px;
   color: #eee;
-  border-radius: 4px;
+  border-radius: 5px;
   font-size: 1em;
   font-weight: 400;
   background-color: #2b2b2b;
@@ -66,5 +97,5 @@ html {
   line-height: 1.75em;
 }
 .example-code #code {
-  font-family: 'Fira Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
 }
