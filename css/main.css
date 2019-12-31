@@ -4,6 +4,9 @@
   line-height: 100%;
   transition: all 100ms linear;
 }
+*::selection {
+  background-color: rgba(0,0,0,.35);
+}
 
 html {
   font-family: 'Roboto Mono', sans-serif;
