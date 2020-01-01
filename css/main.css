@@ -105,7 +105,10 @@ html {
 }
 
 .example {
+  --related-color: #d6894a;
+
   padding: 50px 0;
+  background-color: var(--related-color);
   background-image: url(../img/bg.jpg);
   background-size: cover;
   background-position: center;
