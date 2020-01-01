@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "gh-pages": "^2.1.1",
-    "serve": "^11.3.0"
-  }
-}
