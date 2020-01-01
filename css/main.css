@@ -1,3 +1,7 @@
+
+/*
+ * globais
+ */
 * {
   margin: 0;
   padding: 0;
@@ -11,17 +15,18 @@
   background-color: rgba(0,0,0,.5);
   color: white;
 }
-
 html {
   font-family: 'Roboto Mono', sans-serif;
   font-size: 1em;
 }
-
 .container {
   margin: 0 auto;
   width: 800px;
 }
 
+/*
+ * header
+ */
 .header {
   --pad: 10px;
   box-shadow: 0 1px 1px 1px #f5f5f5;
@@ -54,6 +59,9 @@ html {
   background-color: #eee;
 }
 
+/*
+ * info
+ */
 .info {
   padding-top: 75px;
   padding-bottom: 100px;
@@ -104,6 +112,9 @@ html {
   filter: brightness(.85);
 }
 
+/*
+ * example
+ */
 .example {
   --related-color: #d6894a;
 
@@ -157,4 +168,22 @@ html {
 }
 .example-code #code {
   font-family: 'Roboto Mono', monospace;
+}
+
+/*
+ * footer
+ */
+.footer {
+  padding: 100px 0;
+  text-align: center;
+}
+.footer img {
+  margin-bottom: 30px;
+}
+.footer p {
+  line-height: 300%;
+  color: #666;
+}
+.footer a {
+  color: var(--primary-color);
 }
