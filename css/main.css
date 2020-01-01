@@ -7,8 +7,9 @@
 
   --primary-color: #27ae60;
 }
-*::selection{
+*::selection {
   background-color: rgba(0,0,0,.5);
+  color: white;
 }
 
 html {
@@ -146,6 +147,10 @@ html {
 }
 .example-code {
   line-height: 1.75em;
+}
+.example-code *::selection {
+  color: unset !important;
+  background-color: rgba(255,255,255,.15)
 }
 .example-code #code {
   font-family: 'Roboto Mono', monospace;
