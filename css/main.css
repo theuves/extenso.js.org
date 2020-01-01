@@ -4,9 +4,11 @@
   line-height: 100%;
   transition: all 50ms linear;
   box-sizing: border-box;
+
+  --primary-color: #27ae60;
 }
-*::selection {
-  background-color: rgba(0,0,0,.35);
+*::selection{
+  background-color: rgba(0,0,0,.5);
 }
 
 html {
@@ -21,8 +23,8 @@ html {
 
 .header {
   --pad: 10px;
-  box-shadow: 0 1px 1px 1px #eee;
-  background-color: #f5f5f5;
+  box-shadow: 0 1px 1px 1px #f5f5f5;
+  background-color: #f9f9f9;
 }
 .header,
 .header * {
@@ -55,16 +57,50 @@ html {
   padding-top: 75px;
   padding-bottom: 100px;
 }
+.info-header {
+  margin-bottom: 30px;
+}
 .info-title {
   font-size: 3em;
   margin-bottom: 25px;
 }
 .info-title-detail {
-  color: #27ae60;
+  color: var(--primary-color);
 }
 .info-description {
   color: gray;
   font-size: 1.15em;
+}
+.info-actions {
+  display: flex;
+}
+.info-action:not(:last-child) {
+  margin-right: 15px;
+}
+.info-button {
+  display: inline-block;
+  padding: 18px 26px;
+  border: none;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+}
+.info-button:hover {
+  filter: brightness(1.1);
+}
+.info-button:active {
+  filter: brightness(1.15);
+}
+.info-button--secondary {
+  color: black;
+  background-color: #ddd;
+}
+.info-button--secondary:hover {
+  filter: brightness(.9);
+}
+.info-button--secondary:active {
+  filter: brightness(.85);
 }
 
 .example {
