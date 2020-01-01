@@ -1,9 +1,9 @@
 /**
  * Relaçar sintaxe de código JavaScript.
  *
- * Essa função não é complete sendo criada especialmente para o
- * caso de uso do site <extenso.js.org> podendo haver
- * várias falhas se usado para outros fins.
+ * Essa função não é completa sendo criada especialmente para o
+ * caso de uso dos exemplos mostrado no site <extenso.js.org>
+ * podendo haver várias falhas se usada para outros fins.
  *
  * @author Matheus Alves
  * @license MIT
