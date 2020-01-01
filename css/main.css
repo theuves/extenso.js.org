@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   line-height: 100%;
+  font-family: 'Roboto Mono', monospace;
   transition: all 50ms linear;
   box-sizing: border-box;
 
@@ -14,10 +15,6 @@
 *::selection {
   background-color: rgba(0,0,0,.5);
   color: white;
-}
-html {
-  font-family: 'Roboto Mono', sans-serif;
-  font-size: 1em;
 }
 .container {
   margin: 0 auto;
@@ -166,9 +163,6 @@ html {
   color: unset !important;
   background-color: rgba(255,255,255,.15)
 }
-.example-code #code {
-  font-family: 'Roboto Mono', monospace;
-}
 
 /*
  * footer
@@ -177,13 +171,16 @@ html {
   padding: 100px 0;
   text-align: center;
 }
-.footer img {
-  margin-bottom: 30px;
-}
 .footer p {
   line-height: 300%;
   color: #666;
 }
 .footer a {
   color: var(--primary-color);
+}
+.footer a:hover {
+  filter: brightness(.95);
+}
+.footer a:active {
+  filter: brightness(.9);
 }
