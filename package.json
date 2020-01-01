@@ -4,7 +4,7 @@
     "serve": "^11.3.0"
   },
   "scripts": {
-    "start": "serve",
+    "start": "serve src",
     "deploy": "gh-pages -d src"
   }
 }
